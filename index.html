@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="javas.js" defer></script>
+    <link rel="stylesheet" href="modal.css">
+    <script src="todo.js" defer></script>
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +19,12 @@
         <div class="new">
             <img src="/assets/plus.svg" alt="">
             New Project
+            <div class="modal">
+                New Project
+                <input type="text" class="title_pr" placeholder="Project title">
+                
+            </div>
+            <div class="overlay active"></div>
         </div>
     </div>
     <div class="body">
