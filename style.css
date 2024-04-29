@@ -90,3 +90,7 @@ img:hover{
     background-color: #00cc00;
     border:1px solid black;
 }
+.titlebig{
+    color:black;
+    font-size:40px;
+}

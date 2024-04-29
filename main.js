@@ -38,8 +38,11 @@ document.addEventListener( "click", someListener );
 function someListener(event){
     var element = event.target;
     if(element.classList.contains("proj")){
-        let projtitle=document.querySelector(".projtitle");
+        let projtitle=document.querySelector(".left1");
+        while(projtitle.firstChild)
+            projtitle.removeChild(projtitle.firstChild);
         let title=document.createElement("p");
+        title.classList.add("titlebig");
         let value=document.createTextNode(element.textContent);
         title.appendChild(value);
         projtitle.appendChild(title);
