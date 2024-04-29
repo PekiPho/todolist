@@ -5,30 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modal.css">
-    <script src="todo.js" defer></script>
-    <script src="main.js" defer></script>
+    <!--<script src="./js/todo.js" defer></script>
+    <script src="./js/projects.js"></script>-->
+    <script  src="main.js" type="module" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="header">
         <img src="/assets/arrow.svg" alt="">
         ToDo
+        <div class="modal1">
+            New To Do
+            <input type="text" class="title_td" placeholder="Project title">
+            <input type="text" class="desc" placeholder="Description">
+        </div>
+        <div class="overlay"></div>
     </div>
     <div class="left">
         <p>Projects</p>
         <div class="new">
             <img src="/assets/plus.svg" alt="">
             New Project
-            <div class="modal">
-                New Project
-                <input type="text" class="title_pr" placeholder="Project title">
-                
-            </div>
-            <div class="overlay active"></div>
         </div>
+        <div class="modal">
+            New Project
+            <input type="text" class="title_pr" placeholder="Project title">
+        </div>
+        <div class="overlay"></div>
     </div>
     <div class="body">
-
+        <div class="projtitle">aaa</div>
+        <div class="projbody">aa</div>
     </div>
 </body>
 </html>

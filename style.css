@@ -21,6 +21,9 @@ img{
     filter: brightness(0) invert(1);
     height: 1.25em;
 }
+img:hover{
+    filter:brightness(0.8) invert(0);
+}
 .left{
     
     grid-column: 1/2;
@@ -43,6 +46,12 @@ img{
     position: absolute;
     gap:5px;
     bottom:30px;
+    padding:15px;
+    border-radius: 15px;
+}
+.new:hover{
+    background-color: green;
+    cursor: default;
 }
 .header{
     grid-column: 1/3;
@@ -58,4 +67,12 @@ img{
 .body{
     grid-column: 2/3;
     grid-row: 2/3;
+    display:flex;
+    flex-direction: column;
+}
+.projtitle{
+    height: 75px;
+}
+.projbody{
+    height: calc(100% - 75px);
 }
