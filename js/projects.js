@@ -8,10 +8,13 @@ export default class Projects{
         proj.classList.add("proj");
         proj.textContent=this.name;
         left.appendChild(proj);
+
+        let taskarr=new Array(10);
+        let i=0;
     }
     
-    addTask(){
-        
+    addTask(task){
+        taskarr[i++]=task;
     }
 
     remove(){
