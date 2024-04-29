@@ -77,3 +77,16 @@ img:hover{
 .projbody{
     height: calc(100% - 75px);
 }
+.proj{
+    background-color: #84fe39;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proj:hover{
+    background-color: #00cc00;
+    border:1px solid black;
+}
