@@ -13,7 +13,7 @@ body{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 350px auto;
     grid-template-rows: 100px ;
     position: relative;
 }
@@ -28,7 +28,8 @@ img:hover{
     
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: #84fe39;
+    background-color: green;
+    /* background-color: #76f825; */
     display: flex;
     flex-direction: column;
     font-size: 2em;
@@ -51,7 +52,7 @@ img:hover{
     border-radius: 15px;
 }
 .new:hover{
-    background-color: green;
+    background-color: #00cc00;
     cursor: default;
 }
 .header{
@@ -79,18 +80,21 @@ img:hover{
 }
 .proj{
     background-color: #84fe39;
-    width: 200px;
+    width: 275px;
     height: 50px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.8em;
 }
 .proj:hover{
     background-color: #00cc00;
     border:1px solid black;
 }
 .titlebig{
-    color:black;
+    padding:20px 0 0 40px;
+    color: darkgreen;
     font-size:40px;
+
 }

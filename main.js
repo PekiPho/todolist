@@ -26,6 +26,10 @@ projsumbit.addEventListener('click',()=>{
         return;
     }
     let input=document.querySelector('.title_pr');
+    if(input.value==""){
+        alert("Enter a value");
+        return;
+    }
     p[i]=new Project(input.value);
     input.value="";
     i++;

@@ -14,12 +14,22 @@
     <div class="header">
         <img src="/assets/arrow.svg" alt="">
         ToDo
-        <div class="modal1">
+        <div class="modal1 active">
             New To Do
-            <input type="text" class="title_td" placeholder="Project title">
-            <input type="text" class="desc" placeholder="Description">
+            <input type="text" class="title_td" placeholder="To do title">
+            <textarea name="" id="desc" cols="30" rows="4" placeholder="Description"></textarea>
+            <div class="container">
+                <input type="date" class="date" placeholder="Date">
+                <select name="priority" id="priority">
+                    <option value="Low" class="color color2">Low</option>
+                    <option value="Medium" class="color color2">Medium</option>
+                    <option value="High" class="color color3">High</option>
+                </select>
+            </div>
+            <div class="exit">&times;</div>
+            <button>Create</button>
         </div>
-        <div class="overlay1"></div>
+        <div class="overlay"></div>
     </div>
     <div class="left">
         <p>Projects</p>
