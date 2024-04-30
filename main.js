@@ -3,24 +3,34 @@ import Project from './js/projects.js';
 
 let proj = document.querySelector(".new");
 let modalproj=document.querySelector(".modal");
-let overlayproj=document.querySelector(".overlay");
-let exitproj=document.querySelector(".modal>.exit");
-let projsumbit=document.querySelector(".modal>button");
+let overlay=document.querySelector(".overlay");
+let exitProj=document.querySelector(".modal>.exit");
+let projSumbit=document.querySelector(".modal>button");
+
+let exitTodo=document.querySelector(".exit1");
+let modalTodo=document.querySelector(".modal1");
+
+let bodyProj=document.querySelector(".projbody");
 
 let p= new Array(5);
 let i=0;
 
 proj.addEventListener('click',()=>{
     modalproj.classList.add("active");
-    overlayproj.classList.add("active");
+    overlay.classList.add("active");
 });
 
-exitproj.addEventListener('click',()=>{
+exitProj.addEventListener('click',()=>{
     modalproj.classList.remove("active");
-    overlayproj.classList.remove("active");
+    overlay.classList.remove("active");
 });
 
-projsumbit.addEventListener('click',()=>{
+exitTodo.addEventListener('click',()=>{
+    modalTodo.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+projSumbit.addEventListener('click',()=>{
     if(i>4){
         alert("Too many projects");
         return;
@@ -34,8 +44,9 @@ projsumbit.addEventListener('click',()=>{
     input.value="";
     i++;
     modalproj.classList.remove("active");
-    overlayproj.classList.remove("active");
+    overlay.classList.remove("active");
 });
+
 
 document.addEventListener( "click", someListener );
 
@@ -49,6 +60,25 @@ function someListener(event){
         title.classList.add("titlebig");
         let value=document.createTextNode(element.textContent);
         title.appendChild(value);
-        projtitle.appendChild(title);
+        projtitle.appendChild(title);//all to display name
+
+        let image=document.createElement("img");
+        image.src="/assets/plus.svg";
+        let newTodo=document.createElement("p");
+        value=document.createTextNode("New To Do");
+        let newDiv=document.createElement("div");
+        newTodo.appendChild(value);
+
+        newDiv.appendChild(image);
+        newDiv.appendChild(newTodo);
+        newDiv.classList.add("addtodo");
+
+        bodyProj.appendChild(newDiv);
+
+        let j=0;
+        while(p[j].getName()!=element.textContent) // to find displayed project
+            j++;
+        p[j].clear();
+        p[j].print();
         }
 }

@@ -77,6 +77,7 @@ img:hover{
 }
 .projbody{
     height: calc(100% - 75px);
+    padding-top: 50px;
 }
 .proj{
     background-color: #84fe39;
@@ -97,4 +98,20 @@ img:hover{
     color: darkgreen;
     font-size:40px;
 
+}
+.addtodo{
+    width: 200px;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+}
+.addtodo>p{
+    font-size: 24px;
+    color:darkgreen;
+}
+.addtodo>img{
+    height: 1.25em;
+    filter: invert(42%) sepia(96%) saturate(1771%) hue-rotate(89deg) brightness(108%) contrast(112%);
 }

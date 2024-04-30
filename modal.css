@@ -155,3 +155,12 @@ option{
     color:black;
     border-radius: 10px;
 }
+.color1{
+    background-color: limegreen;
+}
+.color2{
+    background-color: yellow;
+}
+.color3{
+    background-color: red;
+}
